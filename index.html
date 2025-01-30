@@ -29,18 +29,50 @@
      <!-- font awesome-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="sora">
+<body class="sora lg:container mx-auto ">
     <!-- Header -->
     <header>
+      <!-- nav mobile -->
+       <nav class="flex justify-between pl-3 pr-3 mb-8 border-b-2 bg-[#FFF9F4] md:hidden lg:hidden">
+        <div>
+          <img src="./c1-assets/logo-header.png" alt="">
+        </div>
+        <div class="flex justify-between ">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-xl">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      
+       </nav>
         <!-- Navbar -->
-         <nav>
-            <div class="navbar bg-[#FFF9F4] px-20">
-                <div class="navbar-start">
+         <nav class="hidden md:grid">
+            <div class="navbar border-b-2 md:border-none bg-[#FFF9F4] md:pr-16 md:pl-16 ">
+                <div class="flex flex-row-reverse justity-between navbar-start md:grid">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                        class="h-10"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -59,9 +91,9 @@
                       <li><a>Contact us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-2xl font-regular"><img src="./c1-assets/logo-header.png" alt="logo">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                  <a class="btn btn-ghost md:text-2xl font-regular"><img src="./c1-assets/logo-header.png" alt="logo"><p class="hidden md:block">Browse<span class="text-[#FFDC26]">4</span>Pets</p></a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden md:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li><a>Find a pet</a></li>
                     <li><a>Breeds</a></li>
@@ -69,26 +101,26 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                 <div class="space-x-4 mr-4 pt-2"> 
+                 <div class="hidden md:flex space-x-4 mr-4 pt-2"> 
                   <a><i class="fa-regular fa-bell w-6 h-6"></i></a>
                   <a><i class="fa-solid fa-magnifying-glass w-6 h-6"></i> </a> 
                 </div>
-                 <div class="space-x-3">
-                  <a class="btn bg-[#FFF9F4] border-[#FFDC26] rounded-lg px-8 py-2">Login</a>
-                  <a class="btn bg-[#FFDC26] rounded-lg px-8 py-2">Register</a>
+                 <div class="hidden md:flex space-x-3">
+                  <a class="btn bg-[#FFF9F4] text-base md:text-xl  border-[#FFDC26] rounded-lg px-8 py-2">Login</a>
+                  <a class="btn bg-[#FFDC26] text-base md:text-xl rounded-lg px-8 py-2">Register</a>
                  </div>
                 </div>
               </div>
          </nav>
 
          <!-- Banner Section -->
-          <section class="">
-            <div class="relative">
-              <h1 class="adlam absolute z-1 top-[100px] text-start ml-20 text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
-              <p class="absolute z-1 top-[300px] ml-20">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-              <a class="btn bg-[#FFDC26] rounded-lg px-8 py-2 absolute z-1 top-[370px] ml-20 ">Find a pet</a>
+          <section class=" md:mx-auto md:w-11/12">
+            <div class="relative space-y-3">
+              <h1 class="mx-4 adlam md:absolute z-1 top-[100px] text-start text-3xl md:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+              <p class="mx-4 text-base text-slate-700 md:absolute z-1 top-[300px] ">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+              <a class="mx-4 btn bg-[#FFDC26] text-base md:text-xl rounded-lg px-8 py-2 md:absolute z-1 top-[370px] ">Find a pet</a>
             </div>
-            <img class=" w-[1320px] h-[749px] ml-20" src="./c1-assets/cat-big.png " alt="photo">
+            <img class="md:mx-20 md:w-[1320px] md:h-[749px]" src="./c1-assets/cat-big.png " alt="photo">
 
 
           </section>
