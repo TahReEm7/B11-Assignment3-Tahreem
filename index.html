@@ -12,13 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- style -->
      <style>
         .sora {
             font-family: "Sora", serif;
 
         }
+        .adlam {
+          font-family: "ADLaM Display", serif;
+        }
+
      </style>
      <!-- font awesome-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -63,9 +69,9 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                 <div class="space-x-4 mr-4"> 
-                  <a><i class="fa-regular fa-bell"></i></a>
-                  <a><i class="fa-solid fa-magnifying-glass"></i> </a> 
+                 <div class="space-x-4 mr-4 pt-2"> 
+                  <a><i class="fa-regular fa-bell w-6 h-6"></i></a>
+                  <a><i class="fa-solid fa-magnifying-glass w-6 h-6"></i> </a> 
                 </div>
                  <div class="space-x-3">
                   <a class="btn bg-[#FFF9F4] border-[#FFDC26] rounded-lg px-8 py-2">Login</a>
@@ -76,7 +82,14 @@
          </nav>
 
          <!-- Banner Section -->
-          <section>
+          <section class="">
+            <div class="relative">
+              <h1 class="adlam absolute z-1 top-[100px] text-start ml-20 text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+              <p class="absolute z-1 top-[300px] ml-20">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+              <a class="btn bg-[#FFDC26] rounded-lg px-8 py-2 absolute z-1 top-[370px] ml-20 ">Find a pet</a>
+            </div>
+            <img class=" w-[1320px] h-[749px] ml-20" src="./c1-assets/cat-big.png " alt="photo">
+
 
           </section>
 
